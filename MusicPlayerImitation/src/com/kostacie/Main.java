@@ -1,3 +1,6 @@
+package com.kostacie;
+
+
 import java.util.*;
 
 public class Main {

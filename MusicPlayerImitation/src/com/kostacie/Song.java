@@ -1,3 +1,5 @@
+package com.kostacie;
+
 public class Song {
     private String title;
     private double duration;
