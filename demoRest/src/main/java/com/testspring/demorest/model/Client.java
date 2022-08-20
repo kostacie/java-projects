@@ -1,7 +1,6 @@
 package com.testspring.demorest.model;
 
 public class Client {
-
     private Integer id;
     private String name;
     private String email;
