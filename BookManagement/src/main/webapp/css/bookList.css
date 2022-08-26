@@ -1,0 +1,58 @@
+body { background-color: rgba(255, 226, 181, 0.58); }
+
+#header{
+    color: #04AA6D;
+}
+
+/* Style the submit button */
+input[type=button] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-book:link, #add-book:visited{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type=button]:hover, #add-book:hover{
+    background-color: #45a049;
+}
+
+#book_table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#book_table td, #book_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#book_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#book_table tr:nth-child(odd){background-color: rgb(231, 230, 230);}
+#book_table tr:hover {background-color: #ddd;}
+
+#book_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.page{ text-align: center; }
