@@ -70,7 +70,24 @@ public class Main {
 
                 //TODO: replay the current song
                 case 3:
-                    System.out.println("TODO");
+                    if (forward){
+                        if (listIterator.hasPrevious()){
+                            System.out.println("Now playing " + listIterator.previous().toString());
+                            forward = false;
+                        }
+                        else {
+                            System.out.println("It's a beginning of the playlist.");
+                        }
+                    }
+                    else {
+                        if (listIterator.hasNext()){
+                            System.out.println("Now playing " + listIterator.previous().toString());
+                            forward = true;
+                        }
+                        else {
+                            System.out.println("Playing the last song of the playlist.");
+                        }
+                    }
                     break;
 
                 case 4:
