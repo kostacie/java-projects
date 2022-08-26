@@ -47,7 +47,6 @@ a:link, a:visited {
     display: inline-block;
 }
 
-/* Add a background color to the submit button on mouse-over */
 input[type=submit]:hover, a:hover{
     background-color: #45a049;
 }

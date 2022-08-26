@@ -56,15 +56,6 @@ public class BookDaoImpl implements BookDao {
         String sql = "INSERT INTO books(name, author, pages, price) VALUES(?, ?, ?, ?)";
         connect();
         isInserted = executeUpdate(sql, newBook);
-   /*     try(PreparedStatement ps = connection.prepareStatement(sql)) {
-            ps.setString(1, newBook.getName());
-            ps.setString(2, newBook.getAuthor());
-            ps.setInt(3, newBook.getPages());
-            ps.setFloat(4, newBook.getPrice());
-            isInserted = ps.executeUpdate() > 0;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }*/
         disconnect();
         return isInserted;
     }
@@ -75,15 +66,6 @@ public class BookDaoImpl implements BookDao {
         String sql = "UPDATE books SET name=?, author=?, pages=?, price=? WHERE book_id=?";
         connect();
         isUpdated = executeUpdate(sql, book);
-        /*try(PreparedStatement ps = connection.prepareStatement(sql)) {
-            ps.setString(1, book.getName());
-            ps.setString(2, book.getAuthor());
-            ps.setInt(3, book.getPages());
-            ps.setFloat(4, book.getPrice());
-            isUpdated = ps.executeUpdate() > 0;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }*/
         disconnect();
         return isUpdated;
     }
@@ -138,7 +120,7 @@ public class BookDaoImpl implements BookDao {
                 String name = rs.getString("name");
                 String author = rs.getString("author");
                 int pages = rs.getInt("pages");
-                float price = rs.getFloat("price");
+                float price F= rs.getFloat("price");
                 books.add(new Book(id, name, author, pages, price));
             }
             rs.close();

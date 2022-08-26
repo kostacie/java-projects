@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: anastasia
-  Date: 21.08.2022
-  Time: 21:37
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -36,10 +29,6 @@
                 <td>
                    <a href="book?action=edit&id=<c:out value='${book.id}'/>"><input type="button" value="Edit"></a>
                     <a href="book?action=delete&id=<c:out value='${book.id}'/>"><input type="button" value="Delete"></a>
-<%--                    <form action="book?action=edit&id=<c:out value='${book.id}'/>" method="post">--%>
-<%--                        <input type="button" value="Edit">--%>
-<%--                    </form>--%>
-
                 </td>
             </tr>
         </c:forEach>
