@@ -7,5 +7,7 @@ The console app that emulates music player and imitates some functions like play
 This is a web app which allows to store a list of books. MVC architectural pattern, DAO for connection to MySQL database and JSP/JSTL are used. Functionality of the app is an opportunity to access the list of books, add new ones, modify or delete them.
 - ### DemoRest
 Training with Spring Boot & CRUD operations.
+- ### Library Management System
+Modification of Book Management project. This is in progress.
 - ### -NoName- App
-  It's planned to create a client-server app that produces/consumes json messages and modifies data.
+It's planned to create a client-server app that produces/consumes json messages and modifies data.
