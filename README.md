@@ -8,6 +8,4 @@ This is a web app which allows to store a list of books. MVC architectural patte
 - ### DemoRest
 Training with Spring Boot & CRUD operations.
 - ### Library Management System
-Modification of Book Management project. This is in progress.
-- ### -NoName- App
-It's planned to create a client-server app that produces/consumes json messages and modifies data.
+Modification of Book Management project.
